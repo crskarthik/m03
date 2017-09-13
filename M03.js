@@ -77,4 +77,19 @@ function sum() {
   return output;
 }
 
+function square(num){
+  if(num!=null){
+  return num*num
+  }
+  else{
+    throw Error('The given argument is not a number');
+  }
+}
 
+function add(){
+  let result=0;
+  for(i=0;i<arguments.length;i++){
+    result += arguments[i];
+  }
+  return result;
+}
